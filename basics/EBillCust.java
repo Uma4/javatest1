@@ -21,11 +21,11 @@ public class EBillCust {
         double amt;
         double tot;
         // double sur = (15/100);
-        if(unit<=199)
+        if(unit>=199)
             amt = unit*1.20;
-        else if(unit>=200 && unit<=399)
+        else if(unit<=200 && unit>=399)
             amt = unit*1.50;
-        else if(unit>=400 && unit<=599)
+        else if(unit<=400 && unit>=599)
             amt = unit*1.80;
         else
             amt = unit*2;
