@@ -9,35 +9,31 @@ public class DumConstructor {
     String name;
 
     public DumConstructor() {
-        
+        this(5);
+        System.out.println("Welcome1");
     }
     DumConstructor(int id) {
-        this.id = id;
         
+        this(5,"ANuj");
+        System.out.println("Welcome2");
     }
 
     DumConstructor(int id, String name) {
-        this.id = id;
-        this.name = name;
+       
+        this(5,"Anuj",100);
+        System.out.println("Welcome3");
         
     }
     DumConstructor(int id, String name,int no) {
-        this.id = id;
-        this.name = name;
-        this.no = no;
+        System.out.println("Welcome4");
         
     }
-    void demo(){
-        System.out.println("Hai");
-        System.out.println(id);
-        System.out.println(id +" \t" +name );
-        System.out.println(id +"\t" +name +"\t"+ no);
-    }
+    
 
     public static void main(String[] args) {
 
-        DumConstructor dd = new DumConstructor(1,"aaaa",23);
-        dd.demo();
+       new DumConstructor();
+        
         
     }
 }

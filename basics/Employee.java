@@ -1,5 +1,7 @@
 package com.kgisl.basics;
 
+import java.util.stream.Stream;
+
 /**
  * Employee
  */
@@ -11,7 +13,7 @@ String dept;
 float salary;
 
 
-public Employee(int empid, String name, String dept, int salary) {
+public Employee(int empid, String name, String dept, float salary) {
     this.empid = empid;
     this.name = name;
     this.dept = dept;
@@ -71,7 +73,4 @@ public void setSalary(float salary) {
 @Override
 public String toString() {
     return "Id:"+empid+"Name:"+name+"Department:"+dept+"Salary:"+salary;
-}
-
-
-}
+}}
