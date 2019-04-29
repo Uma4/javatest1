@@ -7,25 +7,22 @@ import java.util.Scanner;
  * Distance
  */
 public class Distance {
-  static double convertIntoKms(double miles){
-        double km=1.609*miles;
-        return km;
-    }
-    
-    
-  static double convertIntoMiles(double km){
-        double miles=km/1.609;
-        return miles;
-    }
-    
-    public static void main(String[] args) {
+      public static void main(String[] args) {
+            System.out.println("Enter the value to convert:");
             Scanner sc  =   new Scanner(System.in);
-            double miles   =   sc.nextDouble();
-            System.out.println(miles+" "+convertIntoKms(miles));
-        
-            double kms   =   sc.nextDouble();
-            System.out.println(kms+"  "+convertIntoMiles(kms));
-            
+            double var_x   =   sc.nextDouble();
+            System.out.println("Enter ur choice:");
+            char c = new Scanner(System.in).next().charAt(0);
+            switch (c) {
+              case 'm':
+              System.out.println("m to km= " + var_x * 1.60934);
+              break;
+              case 'k':
+              System.out.println("km to m= " + var_x * 0.621371);
+              break;
+              default:
+                break;
+            }
             
         
         }

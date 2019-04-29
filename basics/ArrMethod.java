@@ -18,10 +18,13 @@ public static void main(String[] args) {
  
     System.out.println("Binary Search");
     int[] s4 = { 1, 2, 3 };
-    int[] s3 = { 2 };
-    // int[] s5 = Arrays.binarySearch(s4, s3);
-    System.out.println(s);
+    Arrays.sort(s4);
+    int k = 2;
+    System.out.println((Arrays.binarySearch(s4, k)));
 
-    
-
+    Emp1 emp1[] = new Emp1[3];
+    // Emp1 emp[] = { new Emp1(1, "name1"), new Emp1(2, "name2") };    
+        Arrays.fill(emp1, new Emp1(7, "name1"));
+        System.out.println(Arrays.toString(emp1)); 
+   
 }}
